@@ -1,10 +1,20 @@
-import React from 'react'
-import './navbar.css'
+import React from "react";
+import "./navbar.css";
+import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import logo from './../../assets/logo.svg'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
-  )
-}
+    <div className="gpt3__navbar">
+      <div className="gpt3__navbar-links">
+        <div className="gpt3__navbar-links">
+          <img src={logo} alt="logo" />l
+        </div>
+      </div>
+      <RiMenu3Line />
+      <RiCloseLine />
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;
